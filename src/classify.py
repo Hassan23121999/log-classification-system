@@ -1,6 +1,6 @@
-from processor_regex import classify_with_regex
-from processor_bert import classify_with_bert
-from processor_llm import classify_with_llm
+from .processor_regex import classify_with_regex
+from .processor_bert import classify_with_bert
+from .processor_llm import classify_with_llm
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 def classify(logs):
